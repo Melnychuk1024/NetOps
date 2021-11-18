@@ -1,0 +1,16 @@
+TCP/IP, IPv4, IPv6, Subnet, DHCP, APIPA, CIDR
+https://www.youtube.com/watch?v=H3BlibIF6hQ
+
+TCP/IP
+https://uk.wikipedia.org/wiki/TCP/IP
+
+IPv4
+https://uk.wikipedia.org/wiki/IPv4
+
+IPv6
+https://uk.wikipedia.org/wiki/IPv6
+
+ARP
+https://uk.wikipedia.org/wiki/ARP
+
+
