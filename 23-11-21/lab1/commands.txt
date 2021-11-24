@@ -1,0 +1,31 @@
+enable (en) / disable 
+configure terminal (conf t)
+go conf t === host ROUTER_NAME
+go enable === show ip interface brief
+go conf t  ===  interface gigabitEtherNet 0/0/0 
+no shutdown
+ip addres 10.1.1.1 255.255.255.0
+go enable === show ip int g0/0/0
+show arp 
+go conf t === enable password cisco123
+show run / do show run
+go conf t === service password-encryption
+go conf t === enable secret cisco111
+
+go conf t === line vty 0 ? (0 15)
+login
+password cisco
+
+
+go conf t === line console 0 
+login
+password cisco
+
+
+copy run startup-config
+
+ 
+
+
+
+
