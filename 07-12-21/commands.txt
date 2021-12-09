@@ -1,0 +1,7 @@
+access-list 100 permit tcp host 10.1.2.101 host 10.1.1.100 eq 80
+access-list 100 deny ip 10.1.2.0 0.0.0.255 10.1.1.0 0.0.0.255 
+access-list 100 permit ip 10.1.2.0 0.0.0.255 any
+do show acc
+ip access-group 100 in
+
+
