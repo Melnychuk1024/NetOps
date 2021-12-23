@@ -1,0 +1,12 @@
+ip route 0.0.0.0 0.0.0.0 8.8.8.8
+do show ip route
+
+int gigabitEthernet 0/0/1
+ip nat outside / inside 
+
+conf t
+ip nat inside source static tcp 10.1.1.100 80 8.8.8.200 80
+
+do show ip nat tr  
+
+ip nat inside source static 10.1.1.101 8.8.8.201

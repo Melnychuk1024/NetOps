@@ -1,0 +1,15 @@
+conf t
+int g0/0/0
+no shut
+ip add 10.1.1.254 255.255.255.0
+ip nat inside
+
+conf t
+ip route 0.0.0.0 0.0.0.0 8.8.8.8
+ip nat inside source static tcp 10.1.1.100 80 8.8.8.200 80
+ip nat inside source static tcp 10.1.1.100 443 8.8.8.200 443
+ip nat inside source static 10.1.1.101 8.8.8.201 
+ip nat inside source list 1 interface gigabitEthernet 0/0/1 overload 
+
+do show ip nat tran
+

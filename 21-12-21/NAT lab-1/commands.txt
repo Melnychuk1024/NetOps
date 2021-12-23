@@ -1,0 +1,24 @@
+int gigabitEthernet 0/0/1
+ip address dhcp
+
+int gigabitEthernet 0/0/0
+ip addres 10.1.1.254/24
+no shut
+
+conf t
+ip dhcp excluded-address 10.1.1.250 10.1.1.254
+ip dhcp pool NAT
+network 10.1.1.0 255.255.255.0
+default-router 10.1.1.254
+dns-server 8.8.8.8
+
+show ip dhcp pool
+show ip dhcp bind
+
+
+NAT
+int gigabitEthernet 0/0/1
+ip NAT outside 
+int gigabitEthernet 0/0/0
+ip NAT inside 
+ip nat inside source list 1 interface gigabitEthernet 0/0/1 overload 
