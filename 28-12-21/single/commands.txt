@@ -1,0 +1,18 @@
+conf t
+router ospf 1
+
+1. network 10.1.1.1 0.0.0.0 area 0
+2. 10.1.1.2 0.0.0.255 area 0 
+
+3. 	conf t
+	int g0/0
+	ip ospf 1 area 0
+
+4. 	router ospf 1
+	network 0.0.0.0 255.255.255.255 area 0	
+
+do show ip route
+
+show ip ospf int
+show ip ospf neighbor 
+show ip ospf database 
