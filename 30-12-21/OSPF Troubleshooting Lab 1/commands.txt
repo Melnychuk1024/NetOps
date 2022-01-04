@@ -1,0 +1,6 @@
+do show ip int br
+ping 10.1.1.2
+sh ip ospf neighbor 
+sh ip protocols 
+sh ip ospf int
+sh ip ospf database 

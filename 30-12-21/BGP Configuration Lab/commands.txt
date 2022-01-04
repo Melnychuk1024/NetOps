@@ -1,0 +1,11 @@
+sh ip int br
+
+conf t
+router bgp 65001
+network 1.1.1.1 mask 255.255.255.255 
+network 8.8.8.0 mask 255.255.255.0
+
+neighbor 8.8.8.2 remote-as 65002 
+
+sh ip protocols 
+
